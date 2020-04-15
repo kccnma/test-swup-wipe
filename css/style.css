@@ -307,18 +307,23 @@ body {
   right: 0;
   left: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0,0,0,1);
   display: grid;
   place-items: center;
   z-index: 200;
   /* color: rgba(255, 255, 255, 1); */
 }
 
-.to-indexhtml .wiper
+.to-indexhtml .wiper,
+.to-test-swup-wipe-indexhtml .wiper
  { background-color: rgb(116, 116, 116); }
-.to-productshtml .wiper { background-color: rgb(218, 74, 74); }
-.to-abouthtml .wiper { background-color: rgb(73, 196, 73); }
-.to-contacthtml .wiper { background-color: rgb(78, 180, 211); }
+.to-productshtml .wiper,
+.to-test-swup-wipe-productshtml .wiper
+ { background-color: rgb(218, 74, 74); }
+.to-abouthtml .wiper,
+.to-test-swup-wipe-abouthtml .wiper { background-color: rgb(73, 196, 73); }
+.to-contacthtml .wiper,
+.to-test-swup-wipe-contacthtml .wiper { background-color: rgb(78, 180, 211); }
 
 
 /* .transition-wipe {
