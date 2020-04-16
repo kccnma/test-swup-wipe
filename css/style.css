@@ -307,7 +307,7 @@ body {
   right: 0;
   left: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,1);
+  background-color: rgb(0,0,0);
   display: grid;
   place-items: center;
   z-index: 200;
@@ -315,15 +315,21 @@ body {
 }
 
 .to-indexhtml .wiper,
-.to-test-swup-wipe-indexhtml .wiper
+.to-test-swup-wipe-indexhtml .wiper,
+.to-gargiulo-tests-swup3-indexhtml .wiper
  { background-color: rgb(116, 116, 116); }
 .to-productshtml .wiper,
-.to-test-swup-wipe-productshtml .wiper
+.to-test-swup-wipe-productshtml .wiper,
+.to-gargiulo-tests-swup3-productshtml .wiper
  { background-color: rgb(218, 74, 74); }
 .to-abouthtml .wiper,
-.to-test-swup-wipe-abouthtml .wiper { background-color: rgb(73, 196, 73); }
+.to-test-swup-wipe-abouthtml .wiper,
+.to-gargiulo-tests-swup3-abouthtml .wiper
+{ background-color: rgb(73, 196, 73); }
 .to-contacthtml .wiper,
-.to-test-swup-wipe-contacthtml .wiper { background-color: rgb(78, 180, 211); }
+.to-test-swup-wipe-contacthtml .wiper,
+.to-gargiulo-tests-swup3-contacthtml .wiper
+{ background-color: rgb(78, 180, 211); }
 
 
 /* .transition-wipe {
