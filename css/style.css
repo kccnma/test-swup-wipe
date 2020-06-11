@@ -339,21 +339,25 @@ body {
 }
 .to-homepage .wiper,
 .to-indexhtml .wiper,
+.to-test-swup-wipe .wiper,
 .to-test-swup-wipe-indexhtml .wiper,
 .to-gargiulo-tests-swup3-indexhtml .wiper
  { background-color: rgb(116, 116, 116); }
  .to-products .wiper,
 .to-productshtml .wiper,
+.to-test-swup-wipe-products .wiper,
 .to-test-swup-wipe-productshtml .wiper,
 .to-gargiulo-tests-swup3-productshtml .wiper
  { background-color: rgb(218, 74, 74); }
  .to-about .wiper,
  .to-abouthtml .wiper,
-.to-test-swup-wipe-abouthtml .wiper,
+ .to-test-swup-wipe-about .wiper,
+ .to-test-swup-wipe-abouthtml .wiper,
 .to-gargiulo-tests-swup3-abouthtml .wiper
 { background-color: rgb(73, 196, 73); }
 .to-contact .wiper,
 .to-contacthtml .wiper,
+.to-test-swup-wipe-contact .wiper,
 .to-test-swup-wipe-contacthtml .wiper,
 .to-gargiulo-tests-swup3-contacthtml .wiper
 { background-color: rgb(78, 180, 211); }
