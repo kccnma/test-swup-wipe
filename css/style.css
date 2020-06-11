@@ -8,7 +8,11 @@ body {
 
 /* GLOBAL COLORS */
 body {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 0.8);
+}
+main, footer {
+  background-color: rgba(255, 255, 255, 1);
   color: rgba(0, 0, 0, 0.8);
 }
 a {
@@ -240,7 +244,7 @@ section:nth-child(even) {
   padding: 10em 1em;
 }
 
-.page-indexhtml .hero  { background: rgba(51,51,51,.5); }
+.page-home .hero { background: rgba(51,51,51,.5); }
 .page-products .hero  { background: rgba(255,0,0,.5); }
 .page-about .hero { background: rgba(0,255,0,.5); }
 .page-contact .hero  { background: rgba(64, 165, 208, 0.5); }
@@ -252,11 +256,11 @@ body {
 
 /* DEFAULT TRANSITION */
 .transition-fade {
-  transition: opacity .4s linear ;
+  transition: all .4s linear ;
   opacity: 1;
 }
 .is-animating .transition-fade {
-  transition: opacity .4s linear;
+  transition: all .4s linear;
   opacity: .99;
 }
 /* ON EXIT, DO THIS: */
@@ -264,23 +268,25 @@ body {
   animation-name: slideup-exit;
   animation-delay: 0s;
   animation-duration: .4s;
-  animation-timing-function: cubic-bezier(0,1,1,1);
+  animation-timing-function: cubic-bezier(.5,0,.5,1);
+  /* animation-timing-function: linear; */
   animation-fill-mode: forwards;
 }
 /* OM ENTER, DO THIS */
 .is-rendering .transition-fade {
   animation-name: slideup-enter;
   animation-delay: 0s;
-  animation-duration: .4s;
+  animation-duration: .8s;
   animation-timing-function: cubic-bezier(.5,0,.5,1);
-  animation-fill-mode: forwards;
+  /* animation-timing-function: linear; */
+  animation-fill-mode: forwards; 
 }
 
 @keyframes slideup-exit {
   0%   { 
     transform: translateY(0); 
   }
-  99% { 
+  50% { 
     transform: translateY(-40px); 
   }
   100%   { 
@@ -297,6 +303,24 @@ body {
   }
 }
 
+@keyframes fade-exit {
+  0%   { 
+    opacity: 1;
+  }
+  100%   { 
+    opacity: .5;
+  }
+}
+
+@keyframes fade-enter {
+  0%   { 
+    opacity: .5;
+  }
+  100% { 
+    opacity: 1;
+  }
+}
+
 /* wiper */
 
 .wiper {
@@ -310,22 +334,25 @@ body {
   background-color: rgb(0,0,0);
   display: grid;
   place-items: center;
-  z-index: 200;
+  /* z-index: 200; */
   /* color: rgba(255, 255, 255, 1); */
 }
-
+.to-homepage .wiper,
 .to-indexhtml .wiper,
 .to-test-swup-wipe-indexhtml .wiper,
 .to-gargiulo-tests-swup3-indexhtml .wiper
  { background-color: rgb(116, 116, 116); }
+ .to-products .wiper,
 .to-productshtml .wiper,
 .to-test-swup-wipe-productshtml .wiper,
 .to-gargiulo-tests-swup3-productshtml .wiper
  { background-color: rgb(218, 74, 74); }
-.to-abouthtml .wiper,
+ .to-about .wiper,
+ .to-abouthtml .wiper,
 .to-test-swup-wipe-abouthtml .wiper,
 .to-gargiulo-tests-swup3-abouthtml .wiper
 { background-color: rgb(73, 196, 73); }
+.to-contact .wiper,
 .to-contacthtml .wiper,
 .to-test-swup-wipe-contacthtml .wiper,
 .to-gargiulo-tests-swup3-contacthtml .wiper
@@ -371,7 +398,7 @@ body {
 .is-rendering .transition-wipe {
   animation-name: wipeup-enter;
   animation-delay: .0s;
-  animation-duration: .4s;
+  animation-duration: .8s;
   animation-timing-function: cubic-bezier(1,0,0,1);
   animation-fill-mode: forwards;
 }
